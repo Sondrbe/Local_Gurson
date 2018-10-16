@@ -1,0 +1,19 @@
+*MATERIAL, NAME=Material-1
+*Density
+0.01,
+*DEPVAR, DELETE=7
+7
+1, Void, "Void Volume fraction"
+2, EpsPEqv, "Equivalent plastic strain"
+3, SigEqv, "Equivalent stress"
+4, SigH, "Hydrostatic stress"
+5, SigM, "Matrix yield stress"
+6, g_func, "Yield function value"
+7, DEL, "Delete element or not"
+*USER MATERIAL, CONSTANTS=19
+**       E,   nu,  sigma0, beta1, beta2, beta3, f_0, T_1
+     210000,   0.3,   355., 1.5,   1.0,   2.25,  0.01, 155.73
+**  Q_1,  T_2,   Q_2,   T_3,   Q_3,  f_N,   s_N,   e_PSN
+  75.24,  91.501,   3.587,  210.85,   0.3069,   0.0,   0.0,   0.
+**  f_c,  f_f,   k_s
+    0.0, 0.0,  0.
